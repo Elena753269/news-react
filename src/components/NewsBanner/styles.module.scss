@@ -1,0 +1,18 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-black);
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.extra {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-gray);
+}
