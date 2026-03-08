@@ -4,9 +4,9 @@ import styles from "./styles.module.scss";
 const NewsList = ({ news }) => {
     return (
         <ul className={styles.list}>
-            {news.map((item) => {
-                return <NewsItem key={item.url} item={item}/>
-            })}
+            {news.map((item) => (
+                <NewsItem key={item.url} item={item}/>
+            ))}
         </ul>
     )
 }
