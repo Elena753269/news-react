@@ -9,6 +9,10 @@
   color: var(--color-black);
   margin-top: 12px;
   margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .extra {
