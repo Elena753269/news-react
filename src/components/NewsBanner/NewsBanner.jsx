@@ -5,9 +5,9 @@ import styles from "./styles.module.scss"
 const NewsBanner = ({item}) => {
     return (
         <div className={styles.banner}>
-            <Image image={item?.urlToImage}/>
+            <Image image={item.image}/>
             <h2 className={styles.title}>{item.title}</h2>
-            <p className={styles.extra}>{formatTimeAgo(item.publishedAt)} · by {item?.author}</p>
+            <p className={styles.extra}>{formatTimeAgo(item.publishedAt)} {item.source?.name ? `· by ${item.source?.name}` : null}</p>
         </div>
     )
 }

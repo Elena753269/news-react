@@ -12,7 +12,7 @@ const Main = () => {
       try {
         const response = await getNews();
         setNews(response.articles);
-        console.log(response.articles)
+        console.log(response.articles[0].source.name)
       } catch (error) {
         console.log(error)
       }
