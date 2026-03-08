@@ -5,14 +5,15 @@ const API_KEY=import.meta.env.VITE_NEWS_API_KEY;
 
 export const getNews = async () => {
     try {
-         const response = await axios.get(`${BASE_URL}/search`, {
+        const response = await axios.get(`${BASE_URL}everything`, 
+        {
             params: {
-                q: 'технологии',          
-                lang: 'ru',                
-                country: 'ru',                                 
-                apikey: API_KEY,            
+                q: 'технологии',
+                language: 'ru',
+                apiKey: API_KEY,
+                pageSize: 30     
             }
-        });
+        })
         return response.data;
 
     } catch (error) {

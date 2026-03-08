@@ -6,13 +6,13 @@ import NewsList from '../../components/NewsList/NewsList';
 
 const Main = () => {
   const [news, setNews] = useState([]);
-
+  
   useEffect(() => {
     const fetchNews = async () => {
       try {
         const response = await getNews();
         setNews(response.articles);
-        console.log(response.articles[0].source.name)
+        console.log(response.articles)
       } catch (error) {
         console.log(error)
       }
