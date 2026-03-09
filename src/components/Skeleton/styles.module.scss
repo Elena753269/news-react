@@ -4,6 +4,12 @@
   row-gap: 12px;
 }
 
+.list_category {
+  display: flex;
+  column-gap: 8px;
+  overflow-x: hidden;
+}
+
 .banner {
   width: 100%;
   padding-top: 100%;
@@ -16,7 +22,14 @@
   position: relative;
 }
 
-.banner, .item {
+.category {
+  width: 80px;
+  height: 32px;
+  border-radius: 32px;
+  flex-shrink: 0;
+}
+
+.banner, .item, .category {
   background: linear-gradient(-90deg, #ebebeb 0%, #fafafa 50%, #ebebeb 100%);
   background-size: 400% 400%;
   animation: pulse 1.2s ease-in-out infinite;
