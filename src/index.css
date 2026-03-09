@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+:root {
+  --light-color: #f2f4f5;
+  --color-black: #090A0A;
+  --color-white: #ffffff;
+  --color-gray: #6c7072;
+  --color-pink: #ffc0cb;
+  --font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+.container {
+  padding: 24px;
+  min-height: 100vh;
+}/*# sourceMappingURL=index.css.map */

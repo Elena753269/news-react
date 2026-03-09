@@ -3,7 +3,7 @@ import axios from "axios";
 const BASE_URL=import.meta.env.VITE_NEWS_BASE_API_URL;
 const API_KEY=import.meta.env.VITE_NEWS_API_KEY;
 
-export const getNews = async () => {
+export const getNews = async (page=1, pageSize=10) => {
     try {
         const response = await axios.get(`${BASE_URL}everything`, 
         {
@@ -11,7 +11,8 @@ export const getNews = async () => {
                 q: 'технологии',
                 language: 'ru',
                 apiKey: API_KEY,
-                pageSize: 30     
+                pageSize,
+                page     
             }
         })
         return response.data;
