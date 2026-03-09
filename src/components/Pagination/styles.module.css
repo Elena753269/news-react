@@ -19,7 +19,7 @@
 .arrow {
   padding: 8px;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: var(--color-pink);
   color: var(--color-white);
   cursor: pointer;
